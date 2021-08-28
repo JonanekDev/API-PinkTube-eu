@@ -12,7 +12,7 @@ router.get("/*", (req, res, next) => {
 })
 
 router.get("/:Mesto/current", (req, res) => {
-    axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + encodeURI(req.params.Mesto) + "&appid=" + process.env.OPENWEATHERMAP_API_TOKEN + "&units=metric")
+    axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + encodeURI(req.params.Mesto) + "&appid=" + process.env.OPENWEATHERMAP_API_TOKEN + "&units=metric&lang=cz")
     .then((ApiData) => {
         res.json(ApiData.data);
     })
