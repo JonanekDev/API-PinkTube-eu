@@ -29,6 +29,9 @@ router.get("/:RedditName/randompost", (req, res) => {
         RandomPost();
         
     })
+    .catch((err) => {
+        res.json({status: "KO", e: err});
+    })
 })
 
 module.exports = router;
