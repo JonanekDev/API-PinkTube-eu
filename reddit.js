@@ -4,7 +4,7 @@ const axios = require("axios");
 const router = express.Router();
 
 router.get("/:RedditName/randompost", (req, res) => {
-    axios.get("https://www.reddit.com/r/" + req.params.RedditName + "/top/.json")
+    axios.get("https://www.reddit.com/r/" + encodeURI(req.params.RedditName) + "/top/.json")
     .then((ApiData) => {
         const data = ApiData.data;
         let tries = 0;

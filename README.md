@@ -3,8 +3,8 @@
 Custom API pro moje aplikace jednoduší práce s weather api a Reddit api
 
 ### Co to umí
-Random post z Redditu /api/reddit/JMÉNOREDDITU/randompost
-Zobrazení aktuálního počasí /api/weather/MĚSTO/current
+* Random post z Redditu /api/reddit/JMÉNOREDDITU/randompost
+* Zobrazení aktuálního počasí /api/weather/MĚSTO/current
 
 
 ### Jak spustit API
